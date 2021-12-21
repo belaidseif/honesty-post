@@ -29,7 +29,6 @@ public class ReactionController {
 
     private UUID getUserUid(HttpServletRequest request){
         String username = String.valueOf(request.getAttribute("username"));
-        System.out.println("username " + username);
         if(!username.equals("null"))
             return UUID.fromString(username);
         return null;
